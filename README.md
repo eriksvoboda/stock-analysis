@@ -139,4 +139,8 @@ Run time for 2017 Analysis
 
 ![](/Resources/VBA_Challenge_2017.png)
 
+Run time for 2018 Analysis
+
+![](/Resources/VBA_Challenge_2018.png)
+
 ## Summary & Conclusions
