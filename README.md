@@ -133,11 +133,20 @@ For i = 0 To 11
 
 End Sub
 
-### Run time of Refactored Code by year
+### Run time difference of Original Code and Refactored Code by year
 
-Run time for 2017 Analysis
+Run time for 2017 Analysis: Original
+
+![](/Resources/Original_2017_Runtime.png)
+
+
+Run time for 2017 Analysis: Refactored
 
 ![](/Resources/VBA_Challenge_2017.png)
+
+Run time for 2018 Analysis: Original
+
+![](/Resources/Original_2018_Runtime.png)
 
 Run time for 2018 Analysis
 
