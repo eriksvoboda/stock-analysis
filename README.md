@@ -136,6 +136,7 @@ End Sub
 ### Run time of Refactored Code by year
 
 Run time for 2017 Analysis
+
 ![](/Resources/VBA_Challenge_2017.png)
 
 ## Summary & Conclusions
