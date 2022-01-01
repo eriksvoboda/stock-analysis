@@ -2,7 +2,7 @@
 
 ## Overview of Project
 
-  The purpose of this project is to provide Steve the ability to analyze all stocks in 2017 and 2018. Additionally this project was focused on refactoring the code previously used to analyze the stocks in a given year.
+  Steve wants to understand how different stocks perform in 2017 and 2018. The purpose of this project is to provide Steve the ability to analyze all stocks in 2017 and 2018. Additionally this project was focused on refactoring the code previously used to analyze the stocks in a given year.
 
 ## Results of Refactoring
 
