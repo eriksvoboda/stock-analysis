@@ -13,6 +13,8 @@
   
 ### Results of Refactoring Code  
 
+  Listed below is the refactored code along with images of the run time for both years from the un-refactored code and the refactored code as well as the code refactored code itself. The original code took an average of 0.27 seconds to run between 2017 and 2018. After refactoring the code 2017 and 2018 take an average of 0.085 seconds to run. This is an improvement of 0.185 seconds on average, or 68.5% decrease in run time from the original code to the refactored code.    
+
 Sub AllStocksAnalysisRefactored()
 
     Dim startTime As Single
