@@ -9,11 +9,10 @@
 ### Stock Return Results
   In 2017 the top three stocks with the largest Return, in order from greatest to least were; DQ (199.4%), SEDG (184.5%), and ENPH (129.5%). The three stocks with the worst Return in 2017, in order from least to greatest were; TERP (-7.2%), RUN (5.5%), and AY (8.9%). The top three stocks in 2018, from greatest to least were; RUN (84%), ENPH (81.9%), and VSLR (-3.5%). The worst performing 2018 stocks in terms of Return, in order from least to greatest were; DQ(-62.6%), JKS (-60.5), and SPWR (-44.6%). The average Return of all stocks in 2017 was 67.3% and in 2018 the all stock average was -8.5%.
   
-  Based on the Returns from 2017 and 2018 ENPH is the stock Steve should suggest to his parents as it has the highest average Return of 105.7% over the two years and outperforms the average of all stocks in both years. DQ has an average return of 68.4% and while it beats the average Return of all stocks in 2017 it's worse to the all stock average in 2018. DQ is a more volatile stock than ENPH so Steve should suggest ENPH to his parents. 
   
 ### Results of Refactoring Code  
 
-  Listed below is the refactored code along with images of the run time for both years from the un-refactored code and the refactored code as well as the code refactored code itself. The original code took an average of 0.27 seconds to run between 2017 and 2018. After refactoring the code 2017 and 2018 take an average of 0.085 seconds to run. This is an improvement of 0.185 seconds on average, or 68.5% decrease in run time from the original code to the refactored code.    
+  Listed below is the refactored code along with images of the run time for both years from the un-refactored code and the refactored code as well as the code refactored code itself. The original code took an average of 0.27 seconds to run between 2017 and 2018. After refactoring the code 2017 and 2018 take an average of 0.085 seconds to run. This is an improvement of 0.185 seconds on average, or otherwise stated as a 68.5% decrease in run time from the original code to the refactored code.    
 
 Sub AllStocksAnalysisRefactored()
 
@@ -164,4 +163,8 @@ Run time for 2018 Analysis
 
 ## Summary & Conclusions
 
-  One way this code could be improved further is including 2017 and 2018 in one pull. Then Steve would be able to compare Total Daily Volume and Return of 2017 and 2018 side by side versus having to pull each year individually.
+Based on the Returns from 2017 and 2018 ENPH is the stock Steve should suggest to his parents as it has the highest average Return of 105.7% over the two years and outperforms the average of all stocks in both years. DQ has an average return of 68.4% and while it beats the average Return of all stocks in 2017 it's worse to the all stock average in 2018. DQ is a more volatile stock than ENPH so Steve should suggest ENPH to his parents. 
+
+The advantages of refactoring code include; making the subroutine more efficient by taking fewer steps, less memory used, and/or improving the logic of the code to make it easier for future users to read. 
+
+One way this code could be improved further is including 2017 and 2018 in one pull. So the data of both years is shown at the same time. Then Steve would be able to compare Total Daily Volume and Return of 2017 and 2018 side by side versus having to pull each year individually.
