@@ -4,7 +4,9 @@
 
   Steve wants to understand how different stocks perform in 2017 and 2018. The purpose of this project is to provide Steve the ability to analyze all stocks in 2017 and 2018. Additionally this project was focused on refactoring the code previously used to analyze the stocks in a given year.
 
-## Results of Refactoring
+## Results
+
+  In 2017 the top three stocks with the largest Return, in order from greatest to least were; DQ (199.4%), SEDG (184.5%), and ENPH (129.5%). The three stocks with the worst Return in 2017, in order from least to greatest were; TERP (-7.2%), RUN (5.5%), and AY (8.9%). 
 
 Sub AllStocksAnalysisRefactored()
     Dim startTime As Single
@@ -153,3 +155,5 @@ Run time for 2018 Analysis
 ![](/Resources/VBA_Challenge_2018.png)
 
 ## Summary & Conclusions
+
+  One way this code could be improved further is including 2017 and 2018 in one pull. Then Steve would be able to compare Total Daily Volume and Return of 2017 and 2018 side by side versus having to pull each year individually.
