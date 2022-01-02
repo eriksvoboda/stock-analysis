@@ -2,7 +2,7 @@
 
 ## Overview of Project
 
-  Steve wants to understand how different stocks perform in 2017 and 2018. The purpose of this project is to provide Steve the ability to analyze all stocks in 2017 and 2018. Additionally this project was focused on refactoring the code previously used to analyze the stocks in a given year.
+  Steve wants to understand how different stocks perform in 2017 and 2018 because his parents want to invest in stock. Initially Steve's parents were very interested in the stock DQ. The purpose of this project is to provide Steve the ability to analyze all stocks in 2017 and 2018 and allow Steve to determine the top stock for his parents. Additionally this project was focused on refactoring the code previously used to analyze the stocks in a given year.
 
 ## Results
 
@@ -14,13 +14,13 @@
   
 ### Results of Refactoring Code  
 
-  Listed below is the refactored code along with images of the run time for both years from the un-refactored code and the refactored code as well as the code refactored code itself. The original code took an average of 0.27 seconds to run between 2017 and 2018. After refactoring the code 2017 and 2018 take an average of 0.085 seconds to run. This is an improvement of 0.185 seconds on average, or otherwise stated as a 68.5% decrease in run time from the original code to the refactored code.    
+  Listed below is the refactored code along with images of the run time for both years from the un-refactored code and the refactored code. The original code took an average of 0.27 seconds to run between 2017 and 2018. After refactoring the code 2017 and 2018 take an average of 0.085 seconds to run. This is an improvement of 0.185 seconds on average, or otherwise stated as a 68.5% decrease in run time from the original code to the refactored code.    
 
 Sub AllStocksAnalysisRefactored()
 
     Dim startTime As Single
     Dim endTime  As Single
-
+    'creating the message box to input the year
     yearValue = InputBox("What year would you like to run the analysis on?")
 
     startTime = Timer
@@ -28,6 +28,7 @@ Sub AllStocksAnalysisRefactored()
     'Format the output sheet on All Stocks Analysis worksheet
     Worksheets("All Stocks Analysis").Activate
     
+    'inputs the year of the data being pulled in cell A1
     Range("A1").Value = "All Stocks (" + yearValue + ")"
     
     'Create a header row
@@ -58,7 +59,7 @@ Sub AllStocksAnalysisRefactored()
     RowCount = Cells(Rows.Count, "A").End(xlUp).Row
     
     '1a) Create a ticker Index
-   tickerIndex = 0
+    tickerIndex = 0
 
     '1b) Create three output arrays
     Dim tickerVolumes(12) As Long
@@ -78,7 +79,8 @@ Sub AllStocksAnalysisRefactored()
     
         '3a) Increase volume for current ticker
         'Found other code on Stack Overflow https: //stackoverflow.com/questions/69684996/runtime-6-overflow-error-refactoring-code-for-stock-analysis because I was getting an Overflow error but now this original piece of code works.
-  tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
+        
+    tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
 
         '3b) Check if the current row is the first row with the selected tickerIndex.
         'If  Then
@@ -114,7 +116,7 @@ For i = 0 To 11
         
     Next i
     
-    'Formatting
+    'Formatting the output
     Worksheets("All Stocks Analysis").Activate
         Range("A3:C3").Font.FontStyle = "Bold"
         Range("A3:C3").Borders(xlEdgeBottom).LineStyle = xlContinuous
@@ -146,27 +148,18 @@ End Sub
 
 ### Run time difference of Original Code and Refactored Code by year
 
-Run time for 2017 Analysis: Original
+Run time for 2017 Analysis: Original vs Refactored Code
 
-![](/Resources/Original_2017_Runtime.png)
+![](/Resources/Original_2017_Runtime.png) ![](/Resources/VBA_Challenge_2017.png)
 
+Run time for 2018 Analysis: Original vs Refactored. Code
 
-Run time for 2017 Analysis: Refactored
-
-![](/Resources/VBA_Challenge_2017.png)
-
-Run time for 2018 Analysis: Original
-
-![](/Resources/Original_2018_Runtime.png)
-
-Run time for 2018 Analysis
-
-![](/Resources/VBA_Challenge_2018.png)
+![](/Resources/Original_2018_Runtime.png) ![](/Resources/VBA_Challenge_2018.png)
 
 ## Summary & Conclusions
 
-Based on the Returns from 2017 and 2018 ENPH is the stock Steve should suggest to his parents as it has the highest average Return of 105.7% over the two years and outperforms the average of all stocks in both years. DQ has an average return of 68.4% and while it beats the average Return of all stocks in 2017 it's worse to the all stock average in 2018. DQ is a more volatile stock than ENPH so Steve should suggest ENPH to his parents. 
+Based on the Returns from 2017 and 2018 ENPH is the stock Steve should suggest to his parents as it has the highest average Return of 105.7% over the two years, and outperforms the average of all stocks in both years. DQ has an average return of 68.4% and while it beats the average Return of all stocks in 2017 it's worse to the all stock average in 2018. DQ is a more volatile stock than ENPH so Steve should suggest ENPH to his parents. 
 
-The advantages of refactoring code include; making the subroutine more efficient by taking fewer steps, less memory used, and/or improving the logic of the code to make it easier for future users to read. 
+The advantages of refactoring code include; making the subroutine more efficient by taking fewer steps, less memory used, and/or improving the logic of the code to make it easier for future users to read. A potential disadvantage of refactoring could be it may take a long time to complete. Also if the code isn't tested throughout the process then if there's a mistake inhibiting the code's ability to run then more time will be needed to debug the code.
 
-One way this code could be improved further is including 2017 and 2018 in one pull. So the data of both years is shown at the same time. Then Steve would be able to compare Total Daily Volume and Return of 2017 and 2018 side by side versus having to pull each year individually.
+One way this code could be improved further is by pulling 2017 and 2018 data at the same time. Then Steve would be able to compare Total Daily Volume and Return of 2017 and 2018 of all stocks side by side versus having to pull each year individually.
