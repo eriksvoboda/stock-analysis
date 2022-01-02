@@ -152,7 +152,7 @@ Run time for 2017 Analysis: Original vs Refactored Code
 
 ![](/Resources/Original_2017_Runtime.png) ![](/Resources/VBA_Challenge_2017.png)
 
-Run time for 2018 Analysis: Original vs Refactored. Code
+Run time for 2018 Analysis: Original vs Refactored Code
 
 ![](/Resources/Original_2018_Runtime.png) ![](/Resources/VBA_Challenge_2018.png)
 
