@@ -9,6 +9,8 @@
 ### Stock Return Results
   In 2017 the top three stocks with the largest Return, in order from greatest to least were; DQ (199.4%), SEDG (184.5%), and ENPH (129.5%). The three stocks with the worst Return in 2017, in order from least to greatest were; TERP (-7.2%), RUN (5.5%), and AY (8.9%). The top three stocks in 2018, from greatest to least were; RUN (84%), ENPH (81.9%), and VSLR (-3.5%). The worst performing 2018 stocks in terms of Return, in order from least to greatest were; DQ(-62.6%), JKS (-60.5), and SPWR (-44.6%). The average Return of all stocks in 2017 was 67.3% and in 2018 the all stock average was -8.5%.
   
+  ![](/Resources/all_stocks_2017)   ![](/Resources/all_stocks_2018)
+  
   
 ### Results of Refactoring Code  
 
