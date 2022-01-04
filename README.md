@@ -2,7 +2,7 @@
 
 ## Overview of Project
 
-  Steve wants to understand how different stocks perform in 2017 and 2018 because his parents want to invest in stock. Initially Steve's parents were very interested in the stock DQ. The purpose of this project is to provide Steve the ability to analyze all stocks in 2017 and 2018 and allow Steve to determine the top stock for his parents. Additionally this project was focused on refactoring the code previously used to analyze the stocks in a given year.
+  Steve wants to understand how different stocks perform in 2017 and 2018 because his parents want to invest in stock. Initially Steve's parents were very interested in the stock DQ. The purpose of this project is to provide Steve the ability to analyze all stocks in 2017 and 2018 and allow Steve to determine the best stock for his parents. Additionally this project was focused on refactoring the code previously used in this module to analyze the stocks in a given year.
 
 ## Results
 
@@ -158,7 +158,7 @@ Run time for 2018 Analysis: Original vs Refactored Code
 
 ## Summary & Conclusions
 
-Based on the Returns from 2017 and 2018 ENPH is the stock Steve should suggest to his parents as it has the highest average Return of 105.7% over the two years, and outperforms the average of all stocks in both years. DQ has an average return of 68.4% and while it beats the average Return of all stocks in 2017 it's worse to the all stock average in 2018. DQ is a more volatile stock than ENPH so Steve should suggest ENPH to his parents. 
+Based on the Returns from 2017 and 2018 ENPH is the stock Steve should suggest to his parents as it has the highest average Return of 105.7% over the two years, and outperforms the average of all stocks in both years. DQ has an average return of 68.4% and while it beats the average Return of all stocks in 2017 it's worse to the all stock average in 2018. Based on the avilable data, DQ is a more volatile stock than ENPH so Steve should suggest ENPH to his parents. 
 
 The advantages of refactoring code include; making the subroutine more efficient by taking fewer steps, less memory used, and/or improving the logic of the code to make it easier for future users to read. A potential disadvantage of refactoring could be it may take a long time to complete. Also if the code isn't tested throughout the process then if there's a mistake inhibiting the code's ability to run then more time will be needed to debug the code.
 
