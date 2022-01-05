@@ -67,11 +67,9 @@ Sub AllStocksAnalysisRefactored()
     Dim tickerEndingPrices(12) As Single
     
     ''2a) Create a for loop to initialize the tickerVolumes to zero.
-    'The instructions say only do it for tickerVolumes but it wasn't working so I tried adding tickerStartingPrices and tickerEndingPrices and it at least didn't break the code so I kept them all
+    'I learned that having ticker Starting and Ending Prices in this loop doesn't prevent the macro from running or change the output
             For i = 0 To 11
                 tickerVolumes(i) = 0
-                tickerStartingPrices(i) = 0
-                tickerEndingPrices(i) = 0
              Next i
         
     ''2b) Loop over all the rows in the spreadsheet.
